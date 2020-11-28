@@ -19,6 +19,7 @@
     </apple-add-to-home-screen-modal>
   </div>
 </template>
+
 <script>
 import NavBar from '@/components/NavBar'
 import NewContentAvailableToastr from '@/components/NewContentAvailableToastr'
