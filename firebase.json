@@ -68,14 +68,8 @@
     "auth": {
       "port": 9099
     },
-    "functions": {
-      "port": 5001
-    },
     "database": {
       "port": null
-    },
-    "pubsub": {
-      "port": 8085
     }
   }
 }
