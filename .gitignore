@@ -24,3 +24,6 @@ firebase-debug.log
 *.njsproj
 *.sln
 *.sw*
+firestore-debug.log
+ui-debug.log
+firebase-debug.1.log

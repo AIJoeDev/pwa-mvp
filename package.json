@@ -2,6 +2,7 @@
   "name": "pwa-mvp",
   "version": "1.0.0",
   "scripts": {
+    "emulate": "firebase emulators:start --import=./tests/emulator --export-on-exit",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
