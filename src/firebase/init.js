@@ -13,6 +13,8 @@ const config = {
   measurementId: 'G-0YX9FY87DQ'
 }
 
-fetch('/__/firebase/init.json').then(async response => {
-  firebase.initializeApp(await response.json())
-})
+if (window.location.hostname === 'localhost') {
+  fetch('/__/firebase/init.json').then(async response => {
+    firebase.initializeApp(await response.json())
+  })
+} else firebase.initializeApp(config)
