@@ -67,9 +67,6 @@
     },
     "auth": {
       "port": 9099
-    },
-    "database": {
-      "port": null
     }
   }
 }

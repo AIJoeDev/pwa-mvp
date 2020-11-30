@@ -9,7 +9,10 @@ export default () => {
   if (isNil(asyncFirestore)) {
     asyncFirestore = import(/* webpackChunkName: "chunk-firestore" */ 'firebase/firestore').then(
       () => {
-        firebase.firestore().settings({})
+        if (window.location.hostname === 'localhost') {
+          firebase.firestore().settings({ ssl: false })
+          firebase.firestore().useEmulator('localhost', 8080)
+        }
         firebase.firestore().enablePersistence({ synchronizeTabs: true })
         return firebase.firestore()
       }
