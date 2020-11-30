@@ -12,6 +12,7 @@ export default () => {
         if (window.location.hostname === 'localhost') {
           firebase.firestore().settings({ ssl: false })
           firebase.firestore().useEmulator('localhost', 8080)
+          console.log('running firestore emulator locally')
         }
         firebase.firestore().enablePersistence({ synchronizeTabs: true })
         return firebase.firestore()

@@ -5,6 +5,7 @@ import store from '@/store'
 
 if (window.location.hostname === 'localhost') {
   firebase.auth().useEmulator('http://localhost:9099/')
+  console.log('running auth emulator locally')
 }
 
 firebase.auth().onAuthStateChanged(firebaseUser => {
